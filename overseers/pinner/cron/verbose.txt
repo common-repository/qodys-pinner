@@ -1,0 +1,104 @@
+* About to connect() to pinterest.com port 443 (#0)
+*   Trying 23.21.135.92... * connected
+* Connected to pinterest.com (23.21.135.92) port 443 (#0)
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using AES256-SHA
+* Server certificate:
+* 	 subject: description=594109-T878j2bMoaZNczbO; C=US; ST=California; L=Mountain View; O=Ryan Park; CN=*.pinterest.com; emailAddress=hostmaster@pinterest.com
+* 	 start date: 2011-12-17 02:59:28 GMT
+* 	 expire date: 2013-12-17 17:54:38 GMT
+* 	 subjectAltName: pinterest.com matched
+* 	 issuer: C=IL; O=StartCom Ltd.; OU=Secure Digital Certificate Signing; CN=StartCom Class 2 Primary Intermediate Server CA
+* 	 SSL certificate verify ok.
+> GET /login/?next=%2Flogin%2F HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.8
+Host: pinterest.com
+Accept: */*
+Referer: http://www.bing.com/
+
+< HTTP/1.1 200 OK
+< Content-Type: text/html; charset=utf-8
+< Date: Mon, 30 Apr 2012 17:41:54 GMT
+< ETag: "f0fed7ffec51bbe58014ab72536eb10f"
+< Server: nginx/0.8.54
+* Added cookie csrftoken="d664756ea0354889201d7c6695959e3d" for domain pinterest.com, path /, expire 1367257315
+< Set-Cookie: csrftoken=d664756ea0354889201d7c6695959e3d; Max-Age=31449600; Path=/
+* Added cookie _pinterest_sess=""eJzLc3VOdEytKPctT4nULjUPy4sKNa6yzDU3iPC0tY8vycxNtfUN8a3yC0kv96tKrvBztLVVK04tLs5MsfXN8jX2q4os93NxrPQLtLUFANLlGZA="" for domain pinterest.com, path /, expire 2672220229
+< Set-Cookie: _pinterest_sess="eJzLc3VOdEytKPctT4nULjUPy4sKNa6yzDU3iPC0tY8vycxNtfUN8a3yC0kv96tKrvBztLVVK04tLs5MsfXN8jX2q4os93NxrPQLtLUFANLlGZA="; Domain=pinterest.com; HttpOnly; expires=Mon, 07-May-2012 17:41:54 GMT; Max-Age=1336412514; Path=/
+< Vary: Cookie, Accept-Encoding
+< Content-Length: 4518
+< Connection: keep-alive
+< 
+* Connection #0 to host pinterest.com left intact
+* Re-using existing connection! (#0) with host pinterest.com
+* Connected to pinterest.com (23.21.135.92) port 443 (#0)
+> POST /login/?next=%2F HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.8
+Host: pinterest.com
+Accept: */*
+Referer: http://pinterest.com/login/?next=%2F
+Cookie: _pinterest_sess="eJzLc3VOdEytKPctT4nULjUPy4sKNa6yzDU3iPC0tY8vycxNtfUN8a3yC0kv96tKrvBztLVVK04tLs5MsfXN8jX2q4os93NxrPQLtLUFANLlGZA="; csrftoken=d664756ea0354889201d7c6695959e3d; _pinterest_sess="eJzLc3VOdEytKPctT4nULjUPy4sKNa6yzDU3iPC0tY8vycxNtfUN8a3yC0kv96tKrvBztLVVK04tLs5MsfXN8jX2q4os93NxrPQLtLUFANLlGZA=";__utma=229774877.1960910657.1333904477.1333904477.1333904477.1; __utmb=229774877.1.10.1333904477; __utmc=229774877; __utmz=229774877.1333904477.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmv=229774877.|2=page_name=login_screen=1
+Content-Length: 100
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/1.1 302 FOUND
+< Content-Type: text/html; charset=utf-8
+< Date: Mon, 30 Apr 2012 17:41:56 GMT
+< ETag: "d41d8cd98f00b204e9800998ecf8427e"
+< Location: http://pinterest.com/
+< Server: nginx/0.8.54
+* Replaced cookie _pinterest_sess=""eJwlybEKwjAUBdC/cXGQKCoOQQqJdHkXAinilEFDSFRqGyXp+3oLXc8ZXgd9Xe/DcdgIlfTlhBBFbXt0Wp6dr584+izJEiOZSqmrCFKu3De+/cI2FPC9opk5+5zjQ1KiHfhWoJoJZvZf9qNbgqE0E1OBfQqw2VIK0x/q9S36"" for domain pinterest.com, path /, expire 2672220233
+< Set-Cookie: _pinterest_sess="eJwlybEKwjAUBdC/cXGQKCoOQQqJdHkXAinilEFDSFRqGyXp+3oLXc8ZXgd9Xe/DcdgIlfTlhBBFbXt0Wp6dr584+izJEiOZSqmrCFKu3De+/cI2FPC9opk5+5zjQ1KiHfhWoJoJZvZf9qNbgqE0E1OBfQqw2VIK0x/q9S36"; Domain=pinterest.com; HttpOnly; expires=Mon, 07-May-2012 17:41:56 GMT; Max-Age=1336412516; Path=/
+< Vary: Cookie
+< Content-Length: 0
+< Connection: keep-alive
+< 
+* Connection #0 to host pinterest.com left intact
+* Re-using existing connection! (#0) with host pinterest.com
+* Connected to pinterest.com (23.21.135.92) port 443 (#0)
+> GET / HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.8
+Host: pinterest.com
+Accept: */*
+Referer: http://pinterest.com/login/?next=%2F
+Cookie: _pinterest_sess="eJwlybEKwjAUBdC/cXGQKCoOQQqJdHkXAinilEFDSFRqGyXp+3oLXc8ZXgd9Xe/DcdgIlfTlhBBFbXt0Wp6dr584+izJEiOZSqmrCFKu3De+/cI2FPC9opk5+5zjQ1KiHfhWoJoJZvZf9qNbgqE0E1OBfQqw2VIK0x/q9S36"; csrftoken=d664756ea0354889201d7c6695959e3d; _pinterest_sess="eJwlybEKwjAUBdC/cXGQKCoOQQqJdHkXAinilEFDSFRqGyXp+3oLXc8ZXgd9Xe/DcdgIlfTlhBBFbXt0Wp6dr584+izJEiOZSqmrCFKu3De+/cI2FPC9opk5+5zjQ1KiHfhWoJoJZvZf9qNbgqE0E1OBfQqw2VIK0x/q9S36";__utma=229774877.1960910657.1333904477.1333904477.1333904477.1; __utmb=229774877.1.10.1333904477; __utmc=229774877; __utmz=229774877.1333904477.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmv=229774877.|2=page_name=login_screen=1
+
+< HTTP/1.1 200 OK
+< Cache-Control: no-cache, no-store, must-revalidate
+< Content-Type: text/html; charset=utf-8
+< Date: Mon, 30 Apr 2012 17:41:56 GMT
+< ETag: "1c31aa4ff94c303094b61ce49c3e0d93"
+< Server: nginx/0.8.54
+* Replaced cookie csrftoken="d664756ea0354889201d7c6695959e3d" for domain pinterest.com, path /, expire 1367257317
+< Set-Cookie: csrftoken=d664756ea0354889201d7c6695959e3d; Max-Age=31449600; Path=/
+< Vary: Cookie, Accept-Encoding
+< Content-Length: 263867
+< Connection: keep-alive
+< 
+* Connection #0 to host pinterest.com left intact
+* About to connect() to pinterest.com port 80 (#1)
+*   Trying 50.17.224.121... * connected
+* Connected to pinterest.com (50.17.224.121) port 80 (#1)
+> POST /pin/create/ HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.8
+Host: pinterest.com
+Accept: */*
+Referer: http://pinterest.com/login/?next=%2F
+Cookie: _pinterest_sess="eJwlybEKwjAUBdC/cXGQKCoOQQqJdHkXAinilEFDSFRqGyXp+3oLXc8ZXgd9Xe/DcdgIlfTlhBBFbXt0Wp6dr584+izJEiOZSqmrCFKu3De+/cI2FPC9opk5+5zjQ1KiHfhWoJoJZvZf9qNbgqE0E1OBfQqw2VIK0x/q9S36"; csrftoken=d664756ea0354889201d7c6695959e3d; _pinterest_sess="eJwlybEKwjAUBdC/cXGQKCoOQQqJdHkXAinilEFDSFRqGyXp+3oLXc8ZXgd9Xe/DcdgIlfTlhBBFbXt0Wp6dr584+izJEiOZSqmrCFKu3De+/cI2FPC9opk5+5zjQ1KiHfhWoJoJZvZf9qNbgqE0E1OBfQqw2VIK0x/q9S36";__utma=229774877.1960910657.1333904477.1333904477.1333904477.1; __utmb=229774877.1.10.1333904477; __utmc=229774877; __utmz=229774877.1333904477.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmv=229774877.|2=page_name=login_screen=1
+Content-Length: 754
+Content-Type: application/x-www-form-urlencoded
+
+< HTTP/1.1 200 OK
+< Content-Type: text/plain
+< Date: Mon, 30 Apr 2012 17:42:10 GMT
+< ETag: "0e61b3f75a9de99882280eeb390d230b"
+< Server: nginx/0.8.54
+< Vary: Cookie
+< Content-Length: 78
+< Connection: keep-alive
+< 
+* Connection #1 to host pinterest.com left intact
+* Closing connection #0
+* Closing connection #1
